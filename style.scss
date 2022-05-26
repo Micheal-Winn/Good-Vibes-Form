@@ -45,6 +45,9 @@ body {
 
             }
 
+            $border: 1.7px solid #C0C0C0;
+            $border-radius: 3px;
+
             .right-value {
                 width: 55%;
                 text-align: left;
@@ -52,14 +55,48 @@ body {
                 .width {
                     width: 100%;
                     padding: 3% 2%;
-                    border: 1.7px solid #C0C0C0;
-                    border-radius: 3px;
+                    border: $border;
+                    border-radius: $border-radius;
 
                     &::placeholder {
                         font-size: 1rem;
                     }
                 }
+
+                .dropdown{
+                    height: 40px;
+                    font-size: .9rem;
+                    border: $border;
+                    border-radius: $border-radius;
+                }
+
+                .radio {
+                    margin-bottom: .7rem;
+                    font-size: 1.1rem;
+                }
+                .textarea {
+                    height: 80px;
+                    text-align: start;
+
+
+                    // &::placeholder {
+                        
+                    // }
+                }
             }
+        }
+        .align {
+            align-items: flex-start;
+        }
+
+        button {
+            padding: .7rem 1.5rem; 
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            border: none;
+            background-color: #6BA2CE;
+            color: white;
+            border-radius: 3px;
         }
     }
 }
