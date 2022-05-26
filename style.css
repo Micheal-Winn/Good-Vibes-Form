@@ -17,8 +17,8 @@ body h1 {
 }
 
 body .form-container {
-  width: 800px;
-  margin: auto;
+  width: 900px;
+  margin: 0 auto 5%;
   background-color: #f3f3f3;
   border-radius: 10px;
   padding: 2% 0;
@@ -36,17 +36,44 @@ body .form-container .row {
   display: -ms-flexbox;
   display: flex;
   gap: 3%;
-  width: 70%;
-  margin: 0 auto 3%;
+  width: 80%;
+  margin: 0 auto 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .form-container .row .labels {
-  width: 50%;
+  width: 45%;
   text-align: right;
+  font-size: 1.1rem;
 }
 
 body .form-container .row .right-value {
-  width: 50%;
+  width: 55%;
   text-align: left;
+}
+
+body .form-container .row .right-value .width {
+  width: 100%;
+  padding: 3% 2%;
+  border: 1.7px solid #C0C0C0;
+  border-radius: 3px;
+}
+
+body .form-container .row .right-value .width::-webkit-input-placeholder {
+  font-size: 1rem;
+}
+
+body .form-container .row .right-value .width:-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+body .form-container .row .right-value .width::-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+body .form-container .row .right-value .width::placeholder {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

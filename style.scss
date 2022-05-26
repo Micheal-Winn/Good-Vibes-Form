@@ -16,8 +16,9 @@ body {
     }
 
     .form-container {
-        width: 800px;
-        margin: auto;
+        width: 900px;
+        // height: 100vh;
+        margin: 0 auto 5%;
         background-color: #f3f3f3;
         border-radius: 10px;
         padding: 2% 0;
@@ -32,17 +33,32 @@ body {
             position: static;
             display: flex;
             gap: 3%;
-            width: 70%;
-            margin: 0 auto 3%;
+            width: 80%;
+            margin: 0 auto 2%;
+            align-items: center;
 
             .labels {
-                width: 50%;
+                width: 45%;
                 text-align: right;
+                font-size: 1.1rem;
+
+
             }
 
             .right-value {
-                width: 50%;
+                width: 55%;
                 text-align: left;
+
+                .width {
+                    width: 100%;
+                    padding: 3% 2%;
+                    border: 1.7px solid #C0C0C0;
+                    border-radius: 3px;
+
+                    &::placeholder {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
