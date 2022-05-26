@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Good Vibes Form</title>
 </head>
 <body>
@@ -50,12 +51,81 @@
         </div>
         <div class="row">
             <div class="labels">
-                <label for="radio" class="label">At what time of day did it happen?</label>
+                <label for="time-of-day" class="label">At what time of day did it happen?</label>
             </div>
             <div class="right-value">
-                <input type="radio" id="number" >
+                <ul id="time-of-day" style="list-style: none;">
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="time-radio" value="1" class="user-choice">
+                        </label>
+                        Morning
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="time-radio" value="2" class="user-choice">
+                            Afternoon
+                        </label>
+                    </li>
+                    <li class="radio">
+                        <label>
+                            <input type="radio" name="time-radio" value="3" class="user-choice">
+                            Evening
+                        </label>
+                    </li>
+                </ul>
             </div>
         </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="feeling" class="label">What emotions did you experience? <br>
+                        (Select all that apply)
+                    </label>
+                </div>
+                <div class="right-value">
+                    <ul id="feeling" style="list-style: none;">
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox" value="1" name="feeling-detail" class="user-choice">
+                                Excited 
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox" value="2" name="feeling-detail" class="user-choice">
+                                 Humbled
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox" value="3" name="feeling-detail" class="user-choice">
+                                Elated
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox" value="4" name="feeling-detail" class="user-choice">
+                                Loved 
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                <input type="checkbox" value="5" name="feeling-detail" class="user-choice">
+                                Enthusiastic 
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="detail" class="label">Please describe your positive experience.</label>
+                </div>
+                <div class="right-value">
+                    <input type="textarea" id="detail" placeholder="Enter your experience here..." required name="textarea-detail" style="height: 50px; font-family:Open Sans Condensed;">
+                </div>
+            </div>
+            <button type="submit" id="submit">Submit</button>
     </form>
 </body>
 </html>
